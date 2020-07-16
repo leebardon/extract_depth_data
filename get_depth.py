@@ -15,7 +15,7 @@ df = ds.to_dataframe()
 
 def get_depth(data, month, depth):
     surface = []
-    for i in range(0, 2200):
+    for i in range(0, len(data)):
         if df.iloc[i].name[3] == depth:
             df["X"] = df.iloc[i].name[1]
             df["Y"] = df.iloc[i].name[2]
