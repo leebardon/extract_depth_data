@@ -25,5 +25,6 @@ def get_depth(data, month, depth):
 
     surface = pd.DataFrame(surface, columns=df.columns)
     surface.to_csv(f'{root}/{out_filename}', index=False)
+    print("------------------------- FILE COMPLETED -------------------------- ")
 
 get_depth(df, month, depth)
